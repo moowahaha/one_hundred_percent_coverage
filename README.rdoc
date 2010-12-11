@@ -3,7 +3,7 @@
 == DESCRIPTION
 
 Useful lil gem to ensure 100% coverage of your tests. It uses the excellent
-gem "simple" cov and only works for Ruby 1.9 (I think).
+gem "simplecov" and only works for Ruby 1.9 (I think).
 
 When included in your specs, it will output the HTML report to the "coverage"
 directory.
