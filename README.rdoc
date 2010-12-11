@@ -1,3 +1,14 @@
+= one_hundred_percent_coverage
+
+== DESCRIPTION
+
+Useful lil gem to ensure 100% coverage of your tests. It uses the excellent
+gem "simple" cov and only works for Ruby 1.9 (I think).
+
+When included in your specs, it will output the HTML report to the "coverage"
+directory.
+
+
 == SYNOPSIS
 
 In the Gemfile add...
@@ -9,4 +20,38 @@ In the spec helper (usually spec/spec_helper.rb), add...
   require 'one_hundred_percent_coverage'
 
 Now tests will fail if they do not have 100% coverage.
+
+Personally, I tend to include it in my spec_helpers conditionally, so single
+test runs aren't affected. I do something like...
+
+  require 'one_hundred_percent_coverage' if ENV['with_coverage']
+
+
+== REQUIREMENTS:
+
+* Ruby 1.9
+* simplecov
+
+== LICENSE:
+
+Copyright (c) 2010 Stephen Hardisty
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
