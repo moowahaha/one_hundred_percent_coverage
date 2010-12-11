@@ -1,8 +1,9 @@
 In the Gemfile add...
 
-  gem 'one_hundred_percent_coverage', :git => 'https://github.com/moowahaha/one_hundred_percent_coverage', :group => :test
+  gem 'one_hundred_percent_coverage', :git => 'git://github.com/moowahaha/one_hundred_percent_coverage', :group => :test
 
-In the spec helper, add...
+In the spec helper (usually spec/spec_helper.rb), add...
 
   require 'one_hundred_percent_coverage'
 
+Now tests will fail if they do not have 100% coverage.
