@@ -8,12 +8,18 @@ gem "simplecov" and only works for Ruby 1.9 (I think).
 When included in your specs, it will output the HTML report to the "coverage"
 directory.
 
+== INSTALL
+
+In your Gemfile...
+
+  gem 'one_hundred_percent_coverage', :group => :test
+
+On the command line...
+
+  gem install one_hundred_percent_coverage
+
 
 == SYNOPSIS
-
-In the Gemfile add...
-
-  gem 'one_hundred_percent_coverage', :git => 'git://github.com/moowahaha/one_hundred_percent_coverage', :group => :test
 
 In the spec helper (usually spec/spec_helper.rb), add...
 
