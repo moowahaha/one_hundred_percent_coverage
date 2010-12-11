@@ -1,0 +1,8 @@
+In the Gemfile add...
+
+  gem 'one_hundred_percent_coverage', :git => 'https://github.com/moowahaha/one_hundred_percent_coverage', :group => :test
+
+In the spec helper, add...
+
+  require 'one_hundred_percent_coverage'
+
