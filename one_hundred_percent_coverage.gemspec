@@ -2,14 +2,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{one_hundred_percent_coverage}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Stephen Hardisty"]
   s.date = %q{2010-12-11}
-  s.description = %q{FIX (describe your package)}
+  s.description = %q{Handy thing to ensure 100% test coverage for Ruby 1.9 projects}
   s.email = ["moowahaha@hotmail.com"]
-#  s.extra_rdoc_files = ["History.txt", "Manifest.txt"]
   s.files = ["README.rdoc", "lib/one_hundred_percent_coverage.rb"]
   s.homepage = %q{http://github.com/moowahaha/one_hundred_percent_coverage}
   s.rdoc_options = ["--main", "README.rdoc"]
